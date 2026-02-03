@@ -150,8 +150,11 @@ h2 {
   /* Make it a perfect circle */
   border-radius: 50%;
   
-  /* Add a white border around the circle */
-  border: 5px solid white;
+  /* Add a soft pink border around the circle */
+  border: 6px solid #f2cfe0;
+
+  /* Add a gentle glow */
+  box-shadow: 0 0 10px rgba(242, 207, 224, 0.4);
   
   /* Make the image cover and zoom in on the circle area */
   object-fit: cover;
