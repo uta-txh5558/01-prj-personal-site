@@ -1,1 +1,60 @@
 /* Add you CSS here */
+
+/* Hero Section Styles */
+.hero {
+  /* Add a dark transparent overlay over the background image */
+  /* The rgba(0, 0, 0, 0.4) creates a 40% transparent black layer */
+  /* Change 0.4 to adjust transparency: 0.0 = fully transparent, 1.0 = fully opaque */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/hero-bg.jpg');
+  
+  /* Make the background cover the entire section */
+  background-size: cover;
+  
+  /* Show the bottom of the image (instead of center or top) */
+  background-position: bottom;
+  
+  /* Prevent the background from repeating */
+  background-repeat: no-repeat;
+  
+  /* Add padding for spacing */
+  padding: 100px 20px;
+  
+  /* Center the text */
+  text-align: center;
+  
+  /* Make text white so it shows on dark backgrounds */
+  color: white;
+}
+
+/* Hero Text Sizes */
+.hero h1 {
+  /* Make the main heading larger */
+  font-size: 48px;
+}
+
+.hero p {
+  /* Make the paragraph text larger */
+  font-size: 20px;
+}
+
+/* Profile Picture Styles */
+.profile-pic {
+  /* Set the width and height to make it a square - increased size */
+  width: 250px;
+  height: 250px;
+  
+  /* Make it a perfect circle */
+  border-radius: 50%;
+  
+  /* Add a white border around the circle */
+  border: 5px solid white;
+  
+  /* Add space below the image */
+  margin-bottom: 20px;
+  
+  /* Make the image cover and zoom in on the circle area */
+  object-fit: cover;
+  
+  /* Scale up the image to zoom in (1.3 = 130% zoom) */
+  transform: scale(1.3);
+}
