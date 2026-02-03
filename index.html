@@ -2,15 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Tammy's Site</title>
+  <title>Tammy's Super Cool & Awesome Site</title>
   <!-- Import Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Import FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <!-- Add your HTML content here -->
    <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="home">
     <!-- Profile Picture Slideshow -->
     <div class="slideshow">
       <img src="img/me.jpg" alt="Profile Picture" class="profile-pic">
@@ -24,16 +38,115 @@
   </section>
 
   <!-- Bio Section -->
-  <section class="bio">
+  <section class="bio" id="about">
     <h2>About Me</h2>
-    <p>I am a current junior studying Computer Science at UT Arlington! 
-      I'm all about people and helping people. I love connecting with others and learning about their stories. I would do almost anything to bring a smile to someone's face. </p>
+    <p>I am a current junior studying Computer Science at UT Arlington. <br><br>
+      I'm all about people and helping people. I love connecting with others and learning about their stories. <br>
+      I am also an adrenaline junkie who loves trying new things and going on side quests!
+     </p>
   </section>
 
   <!-- Skills Section -->
-  <section class="skills">
+  <section class="skills" id="skills">
     <h2>Skills</h2>
-    <p>Java | Python | C | HTML | CSS </p>
+    <div class="skills-container">
+      <div class="skill-item">
+        <i class="fas fa-code"></i>
+        <h3>Programming</h3>
+        <p>Java, Python, C, HTML, CSS</p>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-pencil-alt"></i>
+        <h3>Design</h3>
+        <p>UI/UX, Web Design</p>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-users"></i>
+        <h3>Communication</h3>
+        <p>Teamwork, Collaboration</p>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Problem Solving</h3>
+        <p>Creative Solutions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-item">
+        <h3>NeuroMaker Hand</h3>
+        <ul class="project-bullets">
+          <li>Built prosthetic hand using Arduino and sensors</li>
+          <li>Linked to EEG signals from BCI headband for control</li>
+          <li>Helps individuals with limb differences regain hand functionality</li>
+        </ul>
+        <video controls muted width="100%" style="margin-top: 10px; border-radius: 5px; aspect-ratio: 1;">
+          <source src="img/hand.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="project-item">
+        <h3>Warrior Aerial Assault</h3>
+        <ul class="project-bullets">
+          <li>Built drone for Bell AVR challenge from scratch</li>
+          <li>Synced with QGroundControl for flight management and control</li>
+          <li>Successfully completed the challenge with autonomous flight capabilities</li>
+        </ul>
+        <img src="img/drone.jpg" alt="Drone Project" style="width: 100%; margin-top: 10px; border-radius: 5px;">
+      </div>
+      <div class="project-item">
+        <h3>Arduino Color Sensor (current)</h3>
+        <ul class="project-bullets">
+          <li>Developing a color sensor using Arduino</li>
+          <li>Real-time color recognition and differentiation</li>
+          <li>Integrated with LED indicators for visual feedback</li>
+        </ul>
+        <p style="font-style: italic; margin-top: 30px;">Image coming soon!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section class="hobbies" id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobbies-container">
+      <div class="hobby-item">
+        <i class="fas fa-music"></i>
+        <h3>Music</h3>
+        <p>Listening to music and going to concerts.</p>
+      </div>
+      <div class="hobby-item">
+        <i class="fas fa-utensils"></i>
+        <h3>Trying New Foods</h3>
+        <p>Exploring different cuisines and discovering new favorite dishes.</p>
+      </div>
+      <div class="hobby-item">
+        <i class="fas fa-globe"></i>
+        <h3>Traveling</h3>
+        <p>Traveling to new places and experiencing different cultures.</p>
+      </div>
+      <div class="hobby-item">
+        <i class="fas fa-gamepad"></i>
+        <h3>Gaming</h3>
+        <p>Playing video games and card games with friends.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <p>I'd love to hear from you!</p>
+      <div class="contact-links">
+        <p><i class="fas fa-envelope"></i> Email: tammyho@gmail.com</p>
+        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/tammynguyenho" target="_blank">Tammy Nguyen Ho</a></p>
+        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/uta-txh5558" target="_blank">uta-txh5558</a></p>
+      </div>
+    </div>
   </section>
 </body>
 </html>

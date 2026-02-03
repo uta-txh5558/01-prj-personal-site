@@ -1,6 +1,71 @@
 /* Add you CSS here */
 
-/* Set font for the entire page */
+/* Navigation Bar Styles */
+.navbar {
+  /* Set background color */
+  background-color: #5a5251;
+  
+  /* Make it sticky at the top */
+  position: sticky;
+  top: 0;
+  
+  /* Add padding */
+  padding: 0;
+  
+  /* Add a shadow for depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  
+  /* Higher z-index so it stays on top */
+  z-index: 100;
+}
+
+/* Navigation Links Container */
+.nav-links {
+  /* Remove default list styling */
+  list-style: none;
+  
+  /* Remove default padding and margin */
+  padding: 0;
+  margin: 0;
+  
+  /* Display links in a row */
+  display: flex;
+  
+  /* Center the links */
+  justify-content: center;
+  
+  /* Wrap on smaller screens */
+  flex-wrap: wrap;
+}
+
+/* Individual Navigation Links */
+.nav-links li a {
+  /* Display as block for better padding */
+  display: block;
+  
+  /* Add padding */
+  padding: 15px 25px;
+  
+  /* Make text white */
+  color: white;
+  
+  /* Remove underline */
+  text-decoration: none;
+  
+  /* Use the Poppins font */
+  font-family: 'Poppins', sans-serif;
+  
+  /* Add smooth transition for hover effect */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-links li a:hover {
+  /* Change background color on hover */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
 body {
   font-family: 'Poppins', sans-serif;
   /* Set background color for the page */
@@ -171,4 +236,339 @@ h2 {
   
   /* Add space above the section */
   margin-top: 50px;
+}
+
+/* Skills Container - displays skills in a row */
+.skills-container {
+  /* Display skills side by side */
+  display: flex;
+  
+  /* Wrap to next line on smaller screens */
+  flex-wrap: wrap;
+  
+  /* Center the skills */
+  justify-content: center;
+  
+  /* Add space between skills */
+  gap: 30px;
+  
+  /* Add padding */
+  padding: 20px;
+}
+
+/* Individual Skill Item */
+.skill-item {
+  /* Add padding inside each skill box */
+  padding: 20px;
+  
+  /* Add a subtle border */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  
+  /* Round the corners */
+  border-radius: 10px;
+  
+  /* Set a fixed width */
+  width: 150px;
+  
+  /* Center the text */
+  text-align: center;
+}
+
+/* Skill Icon Styling */
+.skill-item i {
+  /* Make the icon large */
+  font-size: 40px;
+  
+  /* Add space below the icon */
+  margin-bottom: 10px;
+  
+  /* Display block to take full width */
+  display: block;
+}
+
+/* Skill Item Heading */
+.skill-item h3 {
+  /* Add space below the heading */
+  margin: 10px 0 5px;
+  
+  /* Make the font smaller */
+  font-size: 18px;
+}
+
+/* Skill Item Paragraph */
+.skill-item p {
+  /* Make the text smaller and lighter */
+  font-size: 14px;
+  
+  /* Add some transparency */
+  opacity: 0.9;
+}
+
+/* Projects Section Styles */
+.projects {
+  /* Add background color for the full-width strip */
+  background-color: #5a5251;
+  
+  /* Make it span the full width */
+  width: 100%;
+  
+  /* Remove default margins */
+  margin: 0;
+  
+  /* Add padding for spacing inside */
+  padding: 40px 20px;
+  
+  /* Center the text */
+  text-align: center;
+  
+  /* Make text white */
+  color: white;
+  
+  /* Add space above the section */
+  margin-top: 50px;
+}
+
+/* Projects Container - displays projects in a row */
+.projects-container {
+  /* Display projects side by side */
+  display: flex;
+  
+  /* Wrap to next line on smaller screens */
+  flex-wrap: wrap;
+  
+  /* Center the projects */
+  justify-content: center;
+  
+  /* Add space between projects */
+  gap: 30px;
+  
+  /* Add padding */
+  padding: 20px;
+}
+
+/* Individual Project Item */
+.project-item {
+  /* Add padding inside each project box */
+  padding: 25px;
+  
+  /* Add a subtle border */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  
+  /* Round the corners */
+  border-radius: 10px;
+  
+  /* Set a fixed width */
+  width: 280px;
+  
+  /* Center the text */
+  text-align: center;
+}
+
+/* Project Item Heading */
+.project-item h3 {
+  /* Add space below the heading */
+  margin: 0 0 15px;
+  
+  /* Make the font larger */
+  font-size: 24px;
+}
+
+/* Project Bullet Points */
+.project-bullets {
+  /* Remove default list styling */
+  list-style: none;
+  
+  /* Remove default padding and margin */
+  padding: 0;
+  margin: 0;
+  
+  /* Left align the text */
+  text-align: left;
+}
+
+/* Project Bullet Points - List Items */
+.project-bullets li {
+  /* Add space between bullets */
+  margin: 10px 0;
+  
+  /* Add padding for bullet spacing */
+  padding-left: 25px;
+  
+  /* Add custom bullet point */
+  position: relative;
+  
+  /* Make font size smaller */
+  font-size: 16px;
+}
+
+/* Project Bullet Points - Custom bullets */
+.project-bullets li:before {
+  /* Add custom bullet */
+  content: "•";
+  
+  /* Position it before the text */
+  position: absolute;
+  left: 0;
+  
+  /* Make it white */
+  color: white;
+}
+
+/* Contact Section Styles */
+.contact {
+  /* Add background color for the full-width strip */
+  background-color: #5a5251;
+  
+  /* Make it span the full width */
+  width: 100%;
+  
+  /* Remove default margins */
+  margin: 0;
+  
+  /* Add padding for spacing inside */
+  padding: 40px 20px;
+  
+  /* Center the text */
+  text-align: center;
+  
+  /* Make text white */
+  color: white;
+  
+  /* Add space above the section */
+  margin-top: 50px;
+}
+
+/* Contact Container */
+.contact-container {
+  /* Add padding */
+  padding: 20px;
+}
+
+/* Contact Links Styling */
+.contact-links {
+  /* Add space above */
+  margin-top: 20px;
+}
+
+/* Contact Links Paragraph */
+.contact-links p {
+  /* Add space between each link */
+  margin: 15px 0;
+  
+  /* Make font size larger */
+  font-size: 16px;
+}
+
+/* Contact Links Icon */
+.contact-links i {
+  /* Add space after icon */
+  margin-right: 10px;
+}
+
+/* Contact Links - Links inside paragraphs */
+.contact-links a {
+  /* Make links white */
+  color: white;
+  
+  /* Add underline */
+  text-decoration: underline;
+  
+  /* Add hover effect */
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect for contact links */
+.contact-links a:hover {
+  /* Make slightly transparent on hover */
+  opacity: 0.8;
+}
+
+/* Hobbies Section Styles */
+.hobbies {
+  /* Add background color for the full-width strip */
+  background-color: #5a5251;
+  
+  /* Make it span the full width */
+  width: 100%;
+  
+  /* Remove default margins */
+  margin: 0;
+  
+  /* Add padding for spacing inside */
+  padding: 40px 20px;
+  
+  /* Center the text */
+  text-align: center;
+  
+  /* Make text white */
+  color: white;
+  
+  /* Add space above the section */
+  margin-top: 50px;
+}
+
+/* Hobbies Container - displays hobbies in a row */
+.hobbies-container {
+  /* Display hobbies side by side */
+  display: flex;
+  
+  /* Wrap to next line on smaller screens */
+  flex-wrap: wrap;
+  
+  /* Center the hobbies */
+  justify-content: center;
+  
+  /* Add space between hobbies */
+  gap: 30px;
+  
+  /* Add padding */
+  padding: 20px;
+}
+
+/* Individual Hobby Item */
+.hobby-item {
+  /* Add padding inside each hobby box */
+  padding: 20px;
+  
+  /* Add a subtle border */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  
+  /* Round the corners */
+  border-radius: 10px;
+  
+  /* Set a fixed width */
+  width: 150px;
+  
+  /* Center the text */
+  text-align: center;
+}
+
+/* Hobby Icon Styling */
+.hobby-item i {
+  /* Make the icon large */
+  font-size: 40px;
+  
+  /* Add space below the icon */
+  margin-bottom: 10px;
+  
+  /* Display block to take full width */
+  display: block;
+}
+
+/* Hobby Item Heading */
+.hobby-item h3 {
+  /* Add space below the heading */
+  margin: 10px 0 5px;
+  
+  /* Make the font smaller */
+  font-size: 18px;
+}
+
+/* Hobby Item Paragraph */
+.hobby-item p {
+  /* Make the text smaller and lighter */
+  font-size: 14px;
+  
+  /* Add some transparency */
+  opacity: 0.9;
 }
