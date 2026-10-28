@@ -848,3 +848,78 @@ body {
     padding: 22px;
   }
 }
+
+/* Keep every slideshow image centered inside the circular frame. */
+.slideshow {
+  flex: 0 0 250px;
+  overflow: visible;
+}
+
+.profile-pic {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* Project gallery styles */
+.projects > p:not(.eyebrow) {
+  margin-bottom: 20px;
+}
+
+.project-filters {
+  margin: 20px auto 28px;
+}
+
+.projects-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.project-item {
+  width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.project-item h3 {
+  color: #fff;
+}
+
+.project-item p,
+.project-item li {
+  color: #f2e7e2;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.project-item .card-label {
+  display: block;
+}
+
+.project-item .tag-list {
+  color: #f0bfaa;
+}
+
+.project-item .button {
+  margin-top: 8px;
+}
+
+.project-media {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  margin-top: 18px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .project-item {
+    width: 100%;
+  }
+}

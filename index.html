@@ -48,7 +48,6 @@
     <div class="filter-buttons" aria-label="Resume filters">
       <button class="filter-button active" data-filter="all">All</button>
       <button class="filter-button" data-filter="experience">Experience</button>
-      <button class="filter-button" data-filter="projects">Projects</button>
       <button class="filter-button" data-filter="leadership">Leadership</button>
     </div>
     <div class="resume-container">
@@ -97,11 +96,54 @@
   </section>
 
   <section class="projects" id="projects">
-    <p class="eyebrow">Selected project</p>
-    <h2>L'Oréal AI Chatbot Beauty Assistant</h2>
-    <p>Developed a branded routine-builder chatbot with live product browsing, selection, and interactive beauty recommendations.</p>
-    <p class="tag-list">JavaScript · HTML · CSS · OpenAI API · April 2026</p>
-    <a class="button" href="https://uta-txh5558.github.io/08-prj-loreal-chatbot/" target="_blank" rel="noopener">View project <i class="fas fa-external-link-alt"></i></a>
+    <p class="eyebrow">Builds and experiments</p>
+    <h2>Projects</h2>
+    <p>Explore the technical and creative work I have built in class, internships, and beyond.</p>
+    <!-- Visitors can show every project or focus on a type of project. -->
+    <div class="project-filters" aria-label="Project filters">
+      <button class="filter-button project-filter active" data-project-filter="all">All projects</button>
+      <button class="filter-button project-filter" data-project-filter="web">Web &amp; AI</button>
+      <button class="filter-button project-filter" data-project-filter="hardware">Hardware</button>
+      <button class="filter-button project-filter" data-project-filter="games">Games</button>
+    </div>
+    <div class="projects-container">
+      <article class="project-item" data-project-category="web">
+        <span class="card-label">Web &amp; AI · April 2026</span>
+        <h3>L'Oréal AI Chatbot Beauty Assistant</h3>
+        <p>Developed a branded routine-builder chatbot enabling real-time product browsing, selection, and interactive beauty recommendations using live product data.</p>
+        <p class="tag-list">JavaScript · HTML · CSS · OpenAI API</p>
+        <a class="button" href="https://uta-txh5558.github.io/08-prj-loreal-chatbot/" target="_blank" rel="noopener">View project <i class="fas fa-external-link-alt"></i></a>
+      </article>
+      <article class="project-item" data-project-category="hardware">
+        <span class="card-label">Hardware</span>
+        <h3>NeuroMaker Hand</h3>
+        <ul class="project-bullets">
+          <li>Built a prosthetic hand using Arduino and sensors.</li>
+          <li>Linked the hand to EEG signals from a BCI headband for control.</li>
+          <li>Designed the project to help people with limb differences regain hand functionality.</li>
+        </ul>
+        <video controls muted width="100%" class="project-media">
+          <source src="img/hand.mp4" type="video/mp4">
+        </video>
+      </article>
+      <article class="project-item" data-project-category="hardware">
+        <span class="card-label">Hardware</span>
+        <h3>Warrior Aerial Assault</h3>
+        <ul class="project-bullets">
+          <li>Built a drone from scratch for the Bell AVR challenge.</li>
+          <li>Synced the drone with QGroundControl for flight management and control.</li>
+          <li>Completed the challenge with autonomous flight capabilities.</li>
+        </ul>
+        <img src="img/drone.jpg" alt="Warrior Aerial Assault drone project" class="project-media">
+      </article>
+      <article class="project-item" data-project-category="games">
+        <span class="card-label">Game · March - April 2026</span>
+        <h3>Robo Invasion</h3>
+        <p>A Unity game created for a Video Game Design &amp; Development course using C# scripts. This project is still growing, with future plans to make the robots more dangerous and add more polish.</p>
+        <p class="tag-list">Unity · C#</p>
+        <a class="button" href="https://tammiegotchie.itch.io/roboinvasion" target="_blank" rel="noopener">Play on itch.io <i class="fas fa-gamepad"></i></a>
+      </article>
+    </div>
   </section>
 
   <section class="contact" id="contact">
@@ -130,6 +172,23 @@
 
         resumeCards.forEach(function (card) {
           const shouldShow = selectedFilter === 'all' || card.dataset.category === selectedFilter;
+          card.style.display = shouldShow ? 'block' : 'none';
+        });
+      });
+    });
+
+    // Filter the project cards independently from the resume cards.
+    const projectFilterButtons = document.querySelectorAll('.project-filter');
+    const projectCards = document.querySelectorAll('.project-item');
+
+    projectFilterButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        projectFilterButtons.forEach(function (item) { item.classList.remove('active'); });
+        button.classList.add('active');
+        const selectedProjectFilter = button.dataset.projectFilter;
+
+        projectCards.forEach(function (card) {
+          const shouldShow = selectedProjectFilter === 'all' || card.dataset.projectCategory === selectedProjectFilter;
           card.style.display = shouldShow ? 'block' : 'none';
         });
       });
