@@ -916,6 +916,7 @@ body {
   margin-top: 18px;
   border-radius: 5px;
   object-fit: cover;
+  object-position: top;
 }
 
 @media (max-width: 600px) {
