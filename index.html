@@ -2,152 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Tammy's Super Cool & Awesome Site</title>
-  <!-- Import Google Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tammy Nguyen Ho | Computer Science Student</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Import FontAwesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
+  <!-- Navigation links jump to each part of the resume. -->
   <nav class="navbar">
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Add your HTML content here -->
-   <!-- Hero Section -->
   <section class="hero" id="home">
-    <!-- Profile Picture Slideshow -->
     <div class="slideshow">
-      <img src="img/me.jpg" alt="Profile Picture" class="profile-pic">
-      <img src="img/me1.jpg" alt="Profile Picture 1" class="profile-pic">
-      <img src="img/me2.jpg" alt="Profile Picture 2" class="profile-pic">
-      <img src="img/me3.jpg" alt="Profile Picture 3" class="profile-pic">
-      <img src="img/me4.jpg" alt="Profile Picture 4" class="profile-pic">
+      <img src="img/me.jpg" alt="Tammy smiling" class="profile-pic">
+      <img src="img/me1.jpg" alt="Tammy outdoors" class="profile-pic">
+      <img src="img/me2.jpg" alt="Tammy at an event" class="profile-pic">
+      <img src="img/me3.jpg" alt="Tammy posing" class="profile-pic">
+      <img src="img/me4.jpg" alt="Tammy in a portrait" class="profile-pic">
     </div>
-    <br><br>
-    <h1>Hello! I'm Tammy :D</h1>
-    <!--<p>CS Major @ UT Arlington</p>-->
+    <p class="eyebrow">Computer Science @ UT Arlington</p>
+    <h1>Tammy Nguyen Ho</h1>
+    <p class="hero-text">Building useful technology, learning loudly, and always up for a side quest.</p>
+    <a class="button" href="#resume">Explore my experience <i class="fas fa-arrow-down"></i></a>
   </section>
 
-  <!-- Bio Section -->
   <section class="bio" id="about">
-    <h2>About Me</h2>
-    <p>I am a current junior studying Computer Science at UT Arlington. <br><br>
-      I'm all about people and helping people. I love connecting with others and learning about their stories. <br>
-      I am also an adrenaline junkie who loves trying new things and going on side quests!
-     </p>
+    <p class="eyebrow">About me</p>
+    <h2>People-first, technology-curious.</h2>
+    <p>I am studying Computer Science at the University of Texas at Arlington, expected to graduate in May 2027. I enjoy turning complex problems into clear, useful experiences and connecting with people along the way.</p>
+    <p class="quick-facts"><strong>US Citizen</strong> · Arlington, TX · <strong>Presidential Scholar</strong></p>
   </section>
 
-  <!-- Skills Section -->
-  <section class="skills" id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill-item">
-        <i class="fas fa-code"></i>
+  <section class="resume" id="resume">
+    <p class="eyebrow">The details</p>
+    <h2>Resume highlights</h2>
+    <!-- These buttons let visitors focus on the type of work they want to see. -->
+    <div class="filter-buttons" aria-label="Resume filters">
+      <button class="filter-button active" data-filter="all">All</button>
+      <button class="filter-button" data-filter="experience">Experience</button>
+      <button class="filter-button" data-filter="projects">Projects</button>
+      <button class="filter-button" data-filter="leadership">Leadership</button>
+    </div>
+    <div class="resume-container">
+      <article class="resume-card" data-category="education">
+        <span class="card-label">Education</span>
+        <h3>University of Texas at Arlington</h3>
+        <p><strong>B.S. in Computer Science</strong> · Expected May 2027</p>
+        <p>Presidential Scholar. Coursework includes Data Structures &amp; Algorithms, Operating Systems, Programming Languages, Database Systems &amp; File Structures, and Object-Oriented Software Engineering.</p>
+        <h3>Jiangxi University of Finance &amp; Economics</h3>
+        <p><strong>Intelligent Frontiers: A Software and Network Perspective</strong> · July 2026</p>
+        <p>Summer school program focused on AI and Edge Computing.</p>
+      </article>
+      <article class="resume-card" data-category="skills">
+        <span class="card-label">Skills</span>
         <h3>Programming</h3>
-        <p>Java, Python, C, HTML, CSS</p>
-      </div>
-      <div class="skill-item">
-        <i class="fas fa-pencil-alt"></i>
-        <h3>Design</h3>
-        <p>UI/UX, Web Design</p>
-      </div>
-      <div class="skill-item">
-        <i class="fas fa-users"></i>
-        <h3>Communication</h3>
-        <p>Teamwork, Collaboration</p>
-      </div>
-      <div class="skill-item">
-        <i class="fas fa-lightbulb"></i>
-        <h3>Problem Solving</h3>
-        <p>Creative Solutions</p>
-      </div>
+        <p>Java · JavaScript · Python · C/C++ · SQL</p>
+        <h3>Tools</h3>
+        <p>Git · GitHub · HTML/CSS · Jira · Power BI · Google Colaboratory · Cisco Packet Tracer · Microsoft Office</p>
+        <h3>Certifications</h3>
+        <p><a href="https://www.credential.net/ccf41a17-89cc-4910-a68d-2b85e0d89f91#acc.TyGXOmh1" target="_blank" rel="noopener">Web Development</a> · <a href="https://mycredentials.ecornell.cornell.edu/credential/RLcRaVhVfu" target="_blank" rel="noopener">Machine Learning Foundations</a></p>
+      </article>
+      <article class="resume-card" data-category="experience">
+        <span class="card-label">Experience</span>
+        <h3>CVS Health</h3>
+        <p><strong>Pharmacy Technician &amp; CPR-Certified Immunizer</strong> · June 2023 - present</p>
+        <ul><li>Calculate and input critical patient and medication data through RXConnect.</li><li>Triage data entry, insurance billing, and inventory issues for 100+ customer medications daily.</li><li>Dispense medications with 100% accuracy and trained 10 new technicians in the past quarter.</li></ul>
+        <h3>Data Engineering Intern</h3>
+        <p><strong>Break Through Tech Sprinternship</strong> · May 2026</p>
+        <ul><li>Built a Python, Flask, and PostgreSQL analytics platform unifying 50+ metrics into an AI-powered dashboard.</li><li>Added a conversational AI assistant that cut analyst requests by 60%.</li><li>Implemented role-based access and optimized queries for sub-second metric computation.</li></ul>
+        <h3>Frontier Communications</h3>
+        <p><strong>Field Operations Intern</strong> · May 2024</p>
+        <ul><li>Used SQL to investigate operational inefficiencies and analyze customer call transcripts.</li><li>Built a Python, pandas, and scikit-learn predictive model with 90% accuracy.</li></ul>
+      </article>
+      <article class="resume-card" data-category="leadership">
+        <span class="card-label">Leadership</span>
+        <h3>Break Through Tech</h3>
+        <p><strong>2025-26 AI Fellow &amp; 2024/2026 Sprintern</strong> · March 2024 - present</p>
+        <p>Selected from 4,000+ applicants for a competitive technical AI program and industry micro-internships.</p>
+        <h3>SASE - UTA Chapter</h3>
+        <p><strong>South Central Regional Conference Marketing Committee Chair</strong> · June 2025 - April 2026</p>
+        <ul><li>Led weekly marketing meetings for a conference serving 350+ attendees.</li><li>Produced media reaching 100,000+ views across 10,000+ accounts.</li><li>Consulted with a 16-member conference team to keep goals and timelines on track.</li></ul>
+      </article>
     </div>
+    <button class="details-button" id="details-button" aria-expanded="false">Show coursework and extra details</button>
+    <p class="extra-details" id="extra-details" hidden>Relevant coursework: Data Structures &amp; Algorithms, Operating Systems, Programming Languages, Theoretical Concepts in Computer Science, Database Systems &amp; File Structures, and Object-Oriented Software Engineering.</p>
   </section>
 
-  <!-- Projects Section -->
   <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-item">
-        <h3>NeuroMaker Hand</h3>
-        <ul class="project-bullets">
-          <li>Built prosthetic hand using Arduino and sensors</li>
-          <li>Linked to EEG signals from BCI headband for control</li>
-          <li>Helps individuals with limb differences regain hand functionality</li>
-        </ul>
-        <video controls muted width="100%" style="margin-top: 10px; border-radius: 5px; aspect-ratio: 1;">
-          <source src="img/hand.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="project-item">
-        <h3>Warrior Aerial Assault</h3>
-        <ul class="project-bullets">
-          <li>Built drone for Bell AVR challenge from scratch</li>
-          <li>Synced with QGroundControl for flight management and control</li>
-          <li>Successfully completed the challenge with autonomous flight capabilities</li>
-        </ul>
-        <img src="img/drone.jpg" alt="Drone Project" style="width: 100%; margin-top: 10px; border-radius: 5px;">
-      </div>
-      <div class="project-item">
-        <h3>Arduino Color Sensor (current)</h3>
-        <ul class="project-bullets">
-          <li>Developing a color sensor using Arduino</li>
-          <li>Real-time color recognition and differentiation</li>
-          <li>Integrated with LED indicators for visual feedback</li>
-        </ul>
-        <p style="font-style: italic; margin-top: 30px;">Image coming soon!</p>
-      </div>
-    </div>
+    <p class="eyebrow">Selected project</p>
+    <h2>L'Oréal AI Chatbot Beauty Assistant</h2>
+    <p>Developed a branded routine-builder chatbot with live product browsing, selection, and interactive beauty recommendations.</p>
+    <p class="tag-list">JavaScript · HTML · CSS · OpenAI API · April 2026</p>
+    <a class="button" href="https://uta-txh5558.github.io/08-prj-loreal-chatbot/" target="_blank" rel="noopener">View project <i class="fas fa-external-link-alt"></i></a>
   </section>
 
-  <!-- Hobbies Section -->
-  <section class="hobbies" id="hobbies">
-    <h2>Hobbies</h2>
-    <div class="hobbies-container">
-      <div class="hobby-item">
-        <i class="fas fa-music"></i>
-        <h3>Music</h3>
-        <p>Listening to music and going to concerts.</p>
-      </div>
-      <div class="hobby-item">
-        <i class="fas fa-utensils"></i>
-        <h3>Trying New Foods</h3>
-        <p>Exploring different cuisines and discovering new favorite dishes.</p>
-      </div>
-      <div class="hobby-item">
-        <i class="fas fa-globe"></i>
-        <h3>Traveling</h3>
-        <p>Traveling to new places and experiencing different cultures.</p>
-      </div>
-      <div class="hobby-item">
-        <i class="fas fa-gamepad"></i>
-        <h3>Gaming</h3>
-        <p>Playing video games and card games with friends.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
   <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-container">
-      <p>I'd love to hear from you!</p>
-      <div class="contact-links">
-        <p><i class="fas fa-envelope"></i> Email: tammyho@gmail.com</p>
-        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/tammynguyenho" target="_blank">Tammy Nguyen Ho</a></p>
-        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/uta-txh5558" target="_blank">uta-txh5558</a></p>
-      </div>
+    <p class="eyebrow">Let's connect</p>
+    <h2>Have a good idea?</h2>
+    <p>I'd love to hear from you.</p>
+    <div class="contact-links">
+      <button class="copy-button" id="copy-email" data-email="tammyho2023@gmail.com"><i class="fas fa-copy"></i> Copy email</button>
+      <a href="mailto:tammyho2023@gmail.com">tammyho2023@gmail.com</a>
+      <a href="https://linkedin.com/in/tammynguyenho" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/uta-txh5558" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
     </div>
+    <p class="phone">(682) 313-9929</p>
   </section>
+
+  <script>
+    // Filter resume cards when a visitor selects a category.
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const resumeCards = document.querySelectorAll('.resume-card');
+
+    filterButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        filterButtons.forEach(function (item) { item.classList.remove('active'); });
+        button.classList.add('active');
+        const selectedFilter = button.dataset.filter;
+
+        resumeCards.forEach(function (card) {
+          const shouldShow = selectedFilter === 'all' || card.dataset.category === selectedFilter;
+          card.style.display = shouldShow ? 'block' : 'none';
+        });
+      });
+    });
+
+    // Reveal the extra coursework line without leaving the page.
+    const detailsButton = document.querySelector('#details-button');
+    const extraDetails = document.querySelector('#extra-details');
+    detailsButton.addEventListener('click', function () {
+      const isHidden = extraDetails.hasAttribute('hidden');
+      extraDetails.toggleAttribute('hidden');
+      detailsButton.setAttribute('aria-expanded', String(isHidden));
+      detailsButton.textContent = isHidden ? 'Hide extra details' : 'Show coursework and extra details';
+    });
+
+    // Copy the email address and give the visitor quick feedback.
+    document.querySelector('#copy-email').addEventListener('click', function () {
+      navigator.clipboard.writeText(this.dataset.email);
+      this.innerHTML = '<i class="fas fa-check"></i> Email copied';
+      setTimeout(() => { this.innerHTML = '<i class="fas fa-copy"></i> Copy email'; }, 2000);
+    });
+  </script>
 </body>
 </html>

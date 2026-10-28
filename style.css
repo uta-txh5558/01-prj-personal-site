@@ -575,3 +575,276 @@ h2 {
   /* Add some transparency */
   opacity: 0.9;
 }
+
+/* Updated portfolio styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #2f2928;
+  background-color: #f5eee8;
+}
+
+.navbar {
+  background-color: #302827;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+  background-color: #b86f58;
+}
+
+.hero {
+  min-height: 640px;
+  padding: 90px 20px 110px;
+  background: linear-gradient(rgba(48, 40, 39, 0.78), rgba(48, 40, 39, 0.72)), url('img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 10px 0;
+  font-size: 56px;
+}
+
+.eyebrow,
+.card-label {
+  color: #d79379;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  max-width: 550px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+
+.button,
+.details-button,
+.copy-button,
+.filter-button {
+  display: inline-block;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 18px;
+  color: #fff;
+  background-color: #b86f58;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover,
+.button:focus,
+.details-button:hover,
+.copy-button:hover,
+.filter-button:hover {
+  background-color: #8f4f40;
+  transform: translateY(-2px);
+}
+
+.bio,
+.resume,
+.projects,
+.contact {
+  width: 100%;
+  margin: 0;
+  padding: 75px 20px;
+  text-align: center;
+}
+
+.bio {
+  background-color: #fffaf6;
+  color: #2f2928;
+}
+
+.bio h2,
+.resume h2,
+.projects h2,
+.contact h2 {
+  margin: 8px 0 18px;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+}
+
+.bio > p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 12px auto;
+  line-height: 1.8;
+}
+
+.quick-facts {
+  color: #8f4f40;
+}
+
+.resume {
+  background-color: #f5eee8;
+}
+
+.filter-buttons {
+  margin: 25px auto;
+}
+
+.filter-button {
+  margin: 4px;
+  border: 1px solid #b86f58;
+  color: #8f4f40;
+  background-color: transparent;
+}
+
+.filter-button.active {
+  color: #fff;
+  background-color: #b86f58;
+}
+
+.resume-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto 25px;
+  text-align: left;
+}
+
+.resume-card {
+  width: 500px;
+  padding: 28px;
+  border: 1px solid #e3d3ca;
+  border-radius: 8px;
+  background-color: #fffaf6;
+  box-shadow: 0 8px 20px rgba(72, 48, 42, 0.08);
+}
+
+.resume-card h3 {
+  margin: 18px 0 5px;
+  color: #6d3e35;
+  font-size: 20px;
+}
+
+.resume-card h3:first-of-type {
+  margin-top: 12px;
+}
+
+.resume-card p,
+.resume-card li {
+  color: #5d5350;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.resume-card ul {
+  padding-left: 20px;
+}
+
+.resume-card a {
+  color: #8f4f40;
+}
+
+.details-button {
+  color: #8f4f40;
+  border: 1px solid #b86f58;
+  background-color: transparent;
+}
+
+.extra-details {
+  max-width: 700px;
+  margin: 18px auto 0;
+  color: #5d5350;
+  line-height: 1.7;
+}
+
+.projects {
+  color: #fff;
+  background-color: #302827;
+}
+
+.projects h2 {
+  color: #fff;
+}
+
+.projects > p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 12px auto 20px;
+  line-height: 1.8;
+}
+
+.tag-list {
+  color: #f0bfaa;
+  font-weight: 600;
+}
+
+.contact {
+  color: #fff;
+  background-color: #8f4f40;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+.contact .eyebrow {
+  color: #f6d5c7;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px 20px;
+  margin: 25px auto 10px;
+}
+
+.contact-links a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.copy-button {
+  background-color: #302827;
+}
+
+.phone {
+  color: #f6d5c7;
+}
+
+@media (max-width: 600px) {
+  .nav-links li a {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 570px;
+    padding-top: 65px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .bio h2,
+  .resume h2,
+  .projects h2,
+  .contact h2 {
+    font-size: 30px;
+  }
+
+  .resume-card {
+    width: 100%;
+    padding: 22px;
+  }
+}
