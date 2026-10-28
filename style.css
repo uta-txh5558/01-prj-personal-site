@@ -745,6 +745,11 @@ body {
   line-height: 1.7;
 }
 
+.resume-date {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .resume-card ul {
   padding-left: 20px;
 }
